@@ -1,0 +1,965 @@
+/* ========================================
+            Common Css Start
+======================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+}
+
+/* ========================================
+            Common Css End
+======================================== */
+/* ========================================
+            Navbar Start
+======================================== */
+
+nav{
+    background: rgba(106, 98, 197, 0.637);
+    position: absolute;
+    width: 100%;
+}
+
+nav .container .box{
+    padding: 18px 0;
+    height: 100%;
+    align-items: center;
+}
+
+nav .logo{
+    width: 15%;
+}
+
+nav .navitem{
+    width: 70%;
+}
+
+nav .navitem ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    
+
+}
+
+nav .navitem ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffff;
+    transition: 0.4s;
+    position: relative;
+    cursor: pointer;
+}
+
+nav .navitem ul li .drop {
+    width: 200px;
+    height: 0;
+    background: rgba(106, 98, 197, 0.637);
+    position: absolute;
+    top: 33px;
+    left: -64px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+nav .navitem ul li .drop ul{
+    display: block;
+}
+
+nav .navitem ul li .drop ul li{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+nav .navitem ul li:hover .drop{
+    opacity: 1;
+    visibility: visible;
+    height: 140px;
+}
+
+nav .navitem ul li i{
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+nav .navitem ul li:hover{
+    color: #1BBF00;
+}
+
+nav .navitem ul li:hover i{
+    color: #ffff;
+}
+
+nav .button{
+    width: 15%;
+}
+
+nav .button a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 14px 28px;
+    background: #1BBF00;
+    border: 2px solid #1BBF00;
+    border-radius: 100px;
+    color: #ffff;
+    transition: 0.4s;
+}
+
+nav .button a:hover{
+    background: transparent;
+}
+
+/* ========================================
+            Navbar End
+======================================== */
+/* ========================================
+            Banner Start
+======================================== */
+
+.banner{
+    background: url(../images/banner.webp) no-repeat center;
+    background-size: cover;
+}
+
+.banner .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(106, 98, 197, 0.9);
+    text-align: center;
+    padding-top: 246px;
+    padding-bottom: 256px;
+}
+
+.banner .overlay h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: capitalize;
+    width: 962px;
+    margin: 0 auto;
+    color: #FAFAFE;
+}
+
+.banner .overlay p{
+    font-family: 'Paprika', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 715px;
+    margin: 0 auto;
+    color: #FAFAFE;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.banner .overlay .button a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 14px 28px;
+    background: #1BBF00;
+    border: 2px solid #1BBF00;
+    border-radius: 100px;
+    color: #ffff;
+    transition: 0.4s;
+    text-transform: capitalize;
+    margin: 0 14px;
+}
+
+.banner .overlay .button a:hover{
+    background: transparent;
+}
+
+/* ========================================
+            Banner End
+======================================== */
+/* ========================================
+            Image Start
+======================================== */
+
+.image{
+    position: relative;
+    z-index: -1;
+    margin-top: -125px;
+}
+.image .shape{
+    position: absolute;
+    top: 125px;
+    right: -40px;
+}
+.image .box{
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.image img{
+    margin: 0 9px;
+}
+
+
+/* ========================================
+            Image End
+======================================== */
+/* ========================================
+            Number Start
+======================================== */
+
+.number{
+    margin-top: 123px;
+    margin-bottom: 100px;
+}
+
+.number .box{
+    justify-content: space-between;
+}
+
+.number .box .num{
+    text-align: center;
+    position: relative;
+}
+
+.number .box .num::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 2px;
+    height: 132px;
+    background: #4F585F;
+}
+
+.number .box .num:last-child::after{
+    width: 0;
+}
+
+.number .box .num h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: #1BBF00;
+}
+
+.number .box .num p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* ========================================
+            Number End
+======================================== */
+/* ========================================
+            Choose Start
+======================================== */
+
+.choose{
+    position: relative;
+}
+
+.choose .box{
+    padding: 100px 0;
+}
+.choose .shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.choose .left{
+    width: 60%;
+}
+
+.choose .left .item{
+    width: 468px;
+    padding: 42px 103px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: transparent;
+    -webkit-box-shadow: 0px 0px 30px 0px transparent;
+    -moz-box-shadow: 0px 0px 30px 0px transparent;
+    box-shadow: 0px 0px 30px 0px transparent;
+    transition: 0.4s;
+    position: relative;
+}
+
+.choose .left .item .dot1{
+    width: 25px;
+    height: 25px;
+    background: #1bbf00;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 28px;
+}
+
+.choose .left .item .dot2{
+    width: 25px;
+    height: 25px;
+    background: #CBC8F0;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 41px;
+}
+
+.choose .left .item:hover{
+    background: #ffff;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.21);
+}
+
+.choose .left .item p{
+    font-family: 'Paprika', cursive;
+    font-size: 18px;
+    line-height: 30px;
+    width: 366px;
+}
+
+.choose .right{
+    width: 40%;
+}
+
+.choose .right h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.choose .right p{
+    margin-top: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #726E9E;
+    width: 393px;
+}
+
+.choose .right .button{
+    margin-top: 41px;
+}
+
+.choose .right .button a{
+    /* font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 14px 28px;
+    background: #1BBF00;
+    border: 2px solid #1BBF00;
+    border-radius: 100px;
+    color: #ffff;
+    transition: 0.4s;
+}
+
+.choose .right .button a:hover{
+    background: transparent;
+    color: #1BBF00;
+}
+/* ========================================
+            Choose End
+======================================== */
+/* ========================================
+            We do Start
+======================================== */
+
+.wedo{
+    padding: 100px 0;
+    background: #F6F5FF;
+}
+
+.wedo .box{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.wedo .item{
+    width: 31.5%;
+}
+
+.wedo .title {
+    box-sizing: border-box;
+    padding-right: 48px;
+}
+
+.wedo .title h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #141135;
+} 
+.wedo .title p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #6C7D93;
+    margin-top: 20px;
+    margin-bottom: 56px;
+} 
+
+.wedo .title .button a{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 14px 28px;
+    background: #1BBF00;
+    border: 2px solid #1BBF00;
+    border-radius: 100px;
+    color: #ffff;
+    transition: 0.4s;
+}
+
+.wedo .title .button a:hover{
+    background: transparent;
+    color: #1BBF00;
+}
+
+
+
+.wedo .item .service{
+    text-align: center;
+    background: #ffff;
+    padding: 48px 43.5px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.wedo .item .service  img{
+    height: 64px;
+    width: 64px;
+}
+
+.wedo .item .service h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 32px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    transition: 0.4s;
+}
+
+.wedo .item .service p{
+    font-family: 'Paprika', cursive;
+    font-size: 18px;
+    line-height: 30px;
+    height: 120px;
+    margin-bottom: 28px;
+    transition: 0.4s;
+}
+
+.wedo .item .service a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #141135;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.wedo .item .service a::after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -13px;
+    width: 27px;
+    height: 40px;
+    background: #1BBF00;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.wedo .item .service:hover{
+    background: #6B62C5;
+}
+
+.wedo .item .service:hover h3{
+    color: #ffff;
+}
+
+.wedo .item .service:hover p{
+    color: #ffff;
+}
+
+.wedo .item .service:hover a{
+    color: #ffff;
+}
+
+.wedo .item .service:hover a::after{
+    width: 130%;
+    border-radius: 100px;
+}
+
+/* ========================================
+            We do End
+======================================== */
+/* ========================================
+            Impact Start
+======================================== */
+
+.impact{
+    position: relative;
+    padding: 100px 0;
+}
+
+.impact .impactbgr{
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+}
+
+.impact .title{
+    text-align: center;
+}
+
+.impact .title h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #141135;
+}
+.impact .title p{
+    font-family: 'Paprika', cursive;
+    font-size: 18px;
+    color: #726E9E;
+    width: 558px;
+    display: inline-block;
+    margin-top: 23px;
+    margin-bottom: 75px;
+}
+
+.impact .box .left{
+    width: 45%;
+    padding-left: 100px;
+}
+
+.impact .box .left .item{
+    position: relative;
+}
+
+.impact .box .left .item h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #141135;
+}
+
+.impact .box .left .item p{
+    font-family: 'Paprika', cursive;
+    font-size: 18px;
+    line-height: 30px;
+    color: #726E9E;
+    width: 343px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.impact .box .left .item img{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+
+
+.impact .box .right{
+    width: 55%;
+}
+
+/* ========================================
+            Impact End
+======================================== */
+/* ========================================
+            Choose Plan Start
+======================================== */
+.chooseplan{
+    padding: 100px 0;
+    text-align: center;
+    background: #F9F9FB;
+}
+
+.chooseplan .title h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    padding-bottom: 64px;
+    transition: 0.4s;
+}
+
+.chooseplan .box{
+    justify-content: space-between;
+}
+
+.chooseplan .box .item{
+    width: 31%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 19px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px -6px rgba(0,0,0,0.75);
+    padding: 60px 0;
+    transition: 0.4s;
+}
+
+.chooseplan .box .item h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #141135;
+    margin-bottom: 26px;
+}
+
+.chooseplan .box .item img{
+    width: 100%;
+}
+
+.chooseplan .box .item .dollar{
+    position: relative;
+}
+
+.chooseplan .box .item .dollar h5{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #1BBF00;
+    top: 2px;
+    left: 125px;
+}
+
+.chooseplan .box .item h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #1BBF00;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    
+}
+
+.chooseplan .box .item p{
+    font-family: 'Paprika', cursive;
+    font-size: 18px;
+    line-height: 32px;
+    color: #726E9E;
+    width: 252px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.chooseplan .box .item:hover{
+    background: #6B62C5;
+}
+
+.chooseplan .box .item:hover h4{
+    color: #FAFAFE;
+}
+
+.chooseplan .box .item:hover p{
+    color: #E6E5F3;
+}
+/* ========================================
+            Choose Plan End
+======================================== */
+/* ========================================
+            About Us Start
+======================================== */
+.aboutus{
+    padding: 100px 0;
+    text-align: center;
+    background: #F8F8FF;
+}
+
+.aboutus .title h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    padding-bottom: 152px;
+}
+
+.aboutus .bgbox{
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding-top: 120px;
+    padding-bottom: 56px;
+    position: relative;
+}
+
+.aboutus .bgbox img{
+    position: absolute;
+    top: 0;
+    left: 49%;
+    transform: translate(-50%, -37%);
+}
+
+.aboutus .bgbox .rating i{
+    height: 16px;
+    width: 16px;
+    padding: 0 3.5px;
+    color: #FF7628;
+}
+
+.aboutus .bgbox .comment p{
+    font-family: 'Paprika', cursive;
+    font-size: 24px;
+    line-height: 40px;
+    width: 800px;
+    color: #726E9E;
+    display: inline-block;
+    margin-top: 33px;
+    margin-bottom: 48px;
+}
+
+.aboutus .bgbox h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 4px;
+}
+
+.aboutus .bgbox p{
+    font-family: 'Paprika', cursive;
+    font-size: 16px;
+    line-height: 25px;
+    color: #726E9E;
+}
+
+.aboutus .bgbox .design{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    font-size: 42px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 50%;
+    background: rgba(25, 191, 0, 0.2);
+    color: #F8F8FF;
+    transition: 0.4s;
+}
+
+.aboutus .bgbox .design:hover{
+    background: #1BBF00;
+}
+
+.aboutus .bgbox .left{
+    top: 50%;
+    left: -153px;
+    transform: translateY(-50%);
+}
+
+.aboutus .bgbox .right{
+    top: 50%;
+    right: -153px;
+    transform: translateY(-50%);
+}
+
+/* ========================================
+            About Us End
+======================================== */
+/* ========================================
+            May Like Start
+======================================== */
+
+.maylike{
+    padding: 100px 0;
+    position: relative;
+}
+.maylike .shape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.maylike h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #030314;
+    padding-left: 50px;
+    padding-bottom: 4px;
+}
+
+.maylike .container{
+    padding-left: 75px;
+}
+
+.maylike .item{
+    margin-top: 60px;
+}
+
+.maylike .item .images{
+    width: 35%;
+    padding: 0 50px;
+}
+
+.maylike .item .text{
+    width: 65%;
+}
+
+.maylike .item .text .box{
+    column-gap: 35px;
+}
+
+.maylike .item .text .box p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #726E9E;
+}
+
+.maylike .item .text .box p .newscolor{
+    color: #1BBF00;
+}
+
+.maylike .item .text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #141135;
+    width: 580px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.maylike .item .text a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: #141135;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.maylike .item .text a::after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -13px;
+    width: 27px;
+    height: 40px;
+    background: #1BBF00;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: -1;
+    transition: 1s;
+}
+.maylike .item .text a:hover:after{
+    width: 130%;
+    border-radius: 100px;
+}
+/* ========================================
+            May Like End
+======================================== */
+/* ========================================
+            Footer Start
+======================================== */
+.footer{
+    background: #48409C;
+    padding-top: 140px;
+    padding-bottom: 57px;
+
+}
+.footer .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+}
+.footer .box1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-up .logo p{
+    margin-top: 44px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+    color: rgba(254, 254, 254, 0.9);
+    width: 449px;
+}
+.footer .footerfonts h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #FEFEFE;
+    margin-bottom: 48px;
+}
+.footer .footerfonts p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    color: rgba(254, 254, 254, 0.9);
+    margin-bottom: 30px;
+}
+.footer .footer-down .allright{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(254, 254, 254, 0.9);
+}
+.footer .footer-down .box1 a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 15px;
+    color: rgba(254, 254, 254, 0.9);
+}
+/* ========================================
+            Footer End
+======================================== */

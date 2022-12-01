@@ -1,0 +1,7 @@
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Paprika', cursive;
+
+font-family: 'Quicksand', sans-serif;
+
+font-family: 'Nunito', sans-serif;
